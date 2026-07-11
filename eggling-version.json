@@ -1,0 +1,7 @@
+{
+  "android": {
+    "min_version": "1.0.1",
+    "store_url": "https://play.google.com/store/apps/details?id=com.eggling.app",
+    "message": "더 나은 Eggling을 위해 업데이트가 필요해요 🥚"
+  }
+}
