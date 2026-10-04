@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Core Tree Account Deletion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gothic+A1:wght@500;700&display=swap">
+<style>
+  :root {
+    color-scheme: dark;
+    --page: #070d18; --panel: #13213a; --edge: #22375c; --well: #0a1220; --text: #f4f7ff; --dim: #9fb0cf; --soft: #6c7a98;
+    --buy: #2bb673; --buy-d: #1c8a55; --accent: #5cf2d6;
+    --display: "Jua", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    --body: "Gothic A1", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html, body { margin: 0; background: var(--page); color: var(--text); font-family: var(--body); }
+  body { padding-inline: 16px; padding-block: max(24px, env(safe-area-inset-top)) 40px; }
+  main { max-width: 640px; margin: 0 auto; display: grid; gap: 18px; }
+  nav { display: flex; gap: 8px; justify-content: flex-end; }
+  nav a { color: var(--dim); font-size: 13px; text-decoration: none; padding: 4px 8px; border-radius: 8px; }
+  nav a[aria-current="true"] { color: var(--text); background: var(--panel); }
+  h1 { font-family: var(--display); font-weight: 400; font-size: 26px; margin: 0; line-height: 1.2; text-wrap: balance; }
+  .who { color: var(--dim); font-size: 13px; margin: 4px 0 0; }
+  section { background: var(--panel); border: 3px solid var(--edge); border-radius: 22px; padding: 18px 18px 20px; display: grid; gap: 10px; }
+  h2 { font-family: var(--display); font-weight: 400; font-size: 20px; margin: 0; }
+  ol, ul { margin: 0; padding-left: 20px; display: grid; gap: 7px; line-height: 1.6; color: var(--dim); }
+  ol b, ul b { color: var(--text); }
+  p { margin: 0; color: var(--dim); line-height: 1.6; }
+  .go { display: block; text-align: center; font-family: var(--display); font-size: 19px; color: #fff; background: var(--buy); border-radius: 14px; padding: 13px; box-shadow: 0 4px 0 var(--buy-d); text-decoration: none; margin-top: 4px; }
+  .go:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  [lang-block] { display: none; }
+  body[data-lang="ko"] [lang-block="ko"], body[data-lang="en"] [lang-block="en"] { display: grid; gap: 18px; }
+  .foot { color: var(--soft); font-size: 12px; }
+  .foot a { color: var(--accent); }
+</style>
+</head>
+<body data-lang="ko">
+<main>
+  <nav aria-label="Language"><a href="?lang=ko" id="lk">한국어</a><a href="?lang=en" id="le">English</a></nav>
+
+  <div lang-block="ko" lang="ko">
+    <div>
+      <h1>코어 트리: 세포 디펜스, 계정과 데이터 삭제</h1>
+      <p class="who">개발자 J_NuNu (InSange), Google Play 앱 com.insange.coretree</p>
+    </div>
+    <section>
+      <h2>계정과 데이터 삭제 요청 방법</h2>
+      <ol>
+        <li>게임에서 <b>설정 → 문의하기</b>를 누릅니다. 유저 ID가 자동으로 들어갑니다.</li>
+        <li>항목에서 <b>계정과 데이터 삭제 요청</b>을 고르고, 제목과 내용을 적어 <b>보내기</b>를 누릅니다.</li>
+        <li>게임을 이미 지웠다면 아래 버튼으로 문의 페이지를 열고, 본인 확인을 위해 <b>Play 게임즈 이름 또는 별명</b>을 적어 주세요.</li>
+        <li>확인 뒤 <b>30일 안에</b> 삭제하고, 이메일을 남겼다면 완료를 알려 드립니다.</li>
+      </ol>
+      <a class="go" href="../support/?lang=ko#delete">삭제 요청하기</a>
+    </section>
+    <section>
+      <h2>삭제되는 데이터</h2>
+      <ul>
+        <li>클라우드에 저장된 게임 진행: 골드, 보석, 세포와 조각, 연구, 기록, 별명, 받은 우편과 읽은 공지</li>
+        <li>Unity 플레이어 계정과 Google Play 게임즈 연결</li>
+        <li>문의하며 보낸 내용과 이메일</li>
+      </ul>
+    </section>
+    <section>
+      <h2>남는 데이터와 보관 기간</h2>
+      <ul>
+        <li><b>결제 기록</b>: Google Play가 보관합니다 (환불, 세금, 법적 의무). 개발자는 카드 정보를 받지 않습니다.</li>
+        <li><b>광고 데이터</b>: 광고 제공자(Google AdMob, Unity Ads)가 각자의 방침에 따라 보관합니다. 기기 설정에서 광고 ID를 재설정하거나 끌 수 있습니다.</li>
+        <li><b>삭제 요청 기록</b>: 처리 증빙을 위해 처리 뒤 90일 동안 보관하고 지웁니다.</li>
+        <li>휴대폰에 남은 데이터는 앱을 지우면 함께 지워집니다.</li>
+      </ul>
+    </section>
+    <section id="data">
+      <h2>계정은 두고 진행 데이터만 지우기</h2>
+      <p>같은 방법으로 문의하기에서 <b>진행 데이터만 삭제 요청</b>을 고르면, 계정과 Play 게임즈 연결은 남기고 클라우드의 게임 진행만 처음 상태로 지웁니다. 30일 안에 처리합니다.</p>
+      <a class="go" href="../support/?lang=ko#data">진행 데이터만 삭제 요청하기</a>
+    </section>
+    <p class="foot">자세한 내용: <a href="https://insange.github.io/cell-pulse-privacy/?lang=ko">개인정보 처리방침</a></p>
+  </div>
+
+  <div lang-block="en" lang="en">
+    <div>
+      <h1>Core Tree: Cell Defense, account and data deletion</h1>
+      <p class="who">Developer J_NuNu (InSange), Google Play app com.insange.coretree</p>
+    </div>
+    <section>
+      <h2>How to request deletion</h2>
+      <ol>
+        <li>In the game, open <b>Settings → Contact</b>. Your user ID is filled in automatically.</li>
+        <li>Choose <b>Delete my account and data</b>, add a subject and message, and tap <b>Send</b>.</li>
+        <li>If you already deleted the game, use the button below and add your <b>Play Games name or nickname</b> so we can verify you.</li>
+        <li>We delete your data <b>within 30 days</b> after verification and confirm by email if you left one.</li>
+      </ol>
+      <a class="go" href="../support/?lang=en#delete">Request deletion</a>
+    </section>
+    <section>
+      <h2>Data we delete</h2>
+      <ul>
+        <li>Game progress in cloud save: gold, gems, cells and shards, research, records, nickname, claimed mail and read news</li>
+        <li>Your Unity player account and its Google Play Games link</li>
+        <li>Messages and email you sent to support</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Data we keep and for how long</h2>
+      <ul>
+        <li><b>Purchase records</b>: kept by Google Play (refunds, tax, legal duties). We never receive card details.</li>
+        <li><b>Ad data</b>: kept by the ad providers (Google AdMob, Unity Ads) under their own policies. You can reset or turn off the advertising ID in your device settings.</li>
+        <li><b>Record of your deletion request</b>: kept for 90 days after it is handled, then deleted.</li>
+        <li>Data on your phone is removed when you uninstall the app.</li>
+      </ul>
+    </section>
+    <section id="data-en">
+      <h2>Delete only your progress, keep the account</h2>
+      <p>Use the same steps and choose <b>Delete my progress data only</b>. We keep your account and Play Games link and reset only your game progress in the cloud, within 30 days.</p>
+      <a class="go" href="../support/?lang=en#data">Request progress deletion</a>
+    </section>
+    <p class="foot">More details: <a href="https://insange.github.io/cell-pulse-privacy/?lang=en">Privacy policy</a></p>
+  </div>
+</main>
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search).get("lang");
+    var l = q || ((navigator.language || "en").slice(0, 2) === "ko" ? "ko" : "en");
+    if (l !== "ko") l = "en";
+    document.body.setAttribute("data-lang", l);
+    document.documentElement.lang = l;
+    document.getElementById(l === "ko" ? "lk" : "le").setAttribute("aria-current", "true");
+    if (location.hash === "#data" && l === "en") document.getElementById("data-en").scrollIntoView();
+  })();
+</script>
+</body>
+</html>
