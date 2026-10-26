@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://insange.github.io/</loc>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://insange.github.io/coretree/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://insange.github.io/coretree/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insange.github.io/coretree/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://insange.github.io/coretree/en/"/>
+  </url>
+  <url>
+    <loc>https://insange.github.io/coretree/en/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://insange.github.io/coretree/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insange.github.io/coretree/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://insange.github.io/coretree/en/"/>
+  </url>
+  <url>
+    <loc>https://insange.github.io/coretree/delete-account/</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+</urlset>
